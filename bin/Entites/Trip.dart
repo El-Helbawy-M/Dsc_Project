@@ -1,4 +1,3 @@
-
 class Trip {
   Trip({
     int id,
@@ -54,29 +53,29 @@ class Trip {
     print("the trip has been discounted");
   }
 
-  changeValue(String key, var val) {
+  changeValue(int key, var val) {
     switch (key) {
-      case "Id":
+      case 1:
         _id = val;
         break;
 
-      case "Passenger Limit":
+      case 2:
         _passengerLimit = val;
         break;
 
-      case "Ticket Price":
+      case 4:
         _ticketPrice = val;
         break;
 
-      case "Location":
+      case 5:
         _location = val;
         break;
 
-      case "Date":
+      case 6:
         _date = val;
         break;
 
-      case "Passenger On":
+      case 3:
         _passengerOn = val;
         break;
       default:

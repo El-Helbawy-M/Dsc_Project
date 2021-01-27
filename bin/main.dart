@@ -31,22 +31,13 @@ void program() {
     //===========================================
 
     case 1:
-      Map map = helper.add_Data();
-      travel_agency.addTrip(
-        map["id"],
-        map["passenegerLimit"],
-        map["ticketPrice"],
-        map["location"],
-        DateTime.now(),
-      );
+      helper.add_Data();
       break;
 
     //===========================================
 
     case 2:
-      Map map = helper.edit_Data();
-      if (map != null)
-        travel_agency.editTrip(map["id"], map["key"], map["val"]);
+      helper.edit_Data();
       break;
 
     //===========================================
